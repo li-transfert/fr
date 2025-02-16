@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - LI Transfer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Logo Styles */
+        .logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 15%;  /* Logo plus grand pour la page d'accueil */
+            height: 15%px;
+            object-fit: contain;
+            margin-block-end: 80px;
+        }
+
+        /* Main Content */
+        .main-content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        /* Boutons de transfert */
+        .transfer-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .transfer-button {
+            background: #1C1C1C;
+            border: 2px solid #333;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .transfer-button:hover {
+            background: #2C2C2C;
+            transform: translateY(-2px);
+        }
+
+        .transfer-button .icon-placeholder {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #333;
+            margin-right: 20px;
+        }
+
+        .transfer-button .text {
+            text-align: left;
+        }
+
+        .transfer-button .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .transfer-button .description {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Description en bas */
+        .app-description {
+            color: #666;
+            font-size: 12px;
+            line-height: 1.6;
+            text-align: center;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        /* Animation pour les boutons */
+        .transfer-button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <div class="main-content">
+            <h1>LI Transfer</h1>
+            <p class="subtitle">Transférez vos données facilement et rapidement</p>
+
+            <div class="transfer-buttons">
+                <!-- Bouton Android vers iOS -->
+                <div class="transfer-button" onclick="window.location.href='index.html'">
+                    <div class="icon-placeholder"></div>
+                    <div class="text">
+                        <div class="title">Android vers iOS</div>
+                        <div class="description">Transférer depuis Android vers iOS</div>
+                    </div>
+                </div>
+
+                <!-- Bouton iOS vers Android -->
+                <div class="transfer-button" onclick="window.location.href='index.html'">
+                    <div class="icon-placeholder"></div>
+                    <div class="text">
+                        <div class="title">iOS vers Android</div>
+                        <div class="description">Transférer depuis iOS vers Android</div>
+                    </div>
+                </div>
+
+                <!-- Bouton Autres appareils -->
+                <div class="transfer-button" onclick="window.location.href='index.html'">
+                    <div class="icon-placeholder"></div>
+                    <div class="text">
+                        <div class="title">Autres appareils</div>
+                        <div class="description">Connecter d'autres appareils</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="app-description">
+                LI est une application intuitive et performante permettant le transfert de données entre mobiles via un réseau local, 
+                sans nécessiter de connexion Internet. Conçue pour être rapide et sécurisée, LI facilite l'échange de fichiers, contacts, 
+                applications et autres données entre smartphones.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

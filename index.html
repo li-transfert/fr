@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LI</title>
+    <link rel="stylesheet" href="styles.css">
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
+        <link rel="stylesheet" href="assets/css/owl.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <!-- fevicon -->
+        <link rel="icon" href="images/logoapp.png" type="image/gif" />
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+        <!-- Tweaks for older IEs-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+          media="screen">
+        <link rel="icon" sizes="192x192" href="images/logoapp.png">
+        <link rel="shortcut icon" href="images/logoapp.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="images/logoapp.png" type="image/x-icon" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <link href="./css/main.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        width: 10%;  /* Ajustez selon la taille de votre logo */
+        height: 10%; /* Ajustez selon la taille de votre logo */
+        object-fit: contain;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo-container">
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+    
+    <!-- Reste de votre code HTML existant -->
+</div>
+</body>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="back-button icon-placeholder"><img src="images/fleche.png" alt="chargement" width="100%" height="60%"></div>
+            <h1>Android via IOS</h1>
+            <div class="menu-button icon-placeholder"><img src="images/333.png" alt="chargement" width="24" height="18"></div>
+        </header>
+
+        <!-- Progress Steps -->
+        <div class="progress-steps">
+            <div class="step">
+                <div class="icon-placeholder"><img src="images/3.png" alt="chargement" width="26" height="26"></div>
+                <div class="step-line"></div>
+                <span>chargement</span>
+            </div>
+            <div class="step">
+                <div class="icon-placeholder"><img src="images/logo.png" alt="data" width="26" height="26" ></div>
+                <div class="step-line"></div>
+                <span>data</span>
+            </div>
+            <div class="step">
+                <div class="icon-placeholder"><img src="images/valide.png" alt="check" width="26" height="26"></div>
+                <span>terminé</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Transfert de données ...</h2>
+            
+            
+            <!-- Circular Animation -->
+            <div class="circular-animation">
+                <div class="orbit">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="center-icon">
+                    <img src="images/bonom.png" alt="Profile Icon" class="profile-image">
+                </div>
+            </div>
+            
+            <style>
+                /* Ajoutez ces styles pour l'image centrale */
+                .center-icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 300px;  /* Ajustez selon la taille souhaitée */
+                    height: 300px; /* Ajustez selon la taille souhaitée */
+                    background: #1c1c1c00;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 2;
+                }
+            
+                .profile-image {
+                    width: 80%;
+                    height: 80%;
+                    object-fit: contain;
+                    border-radius: 50%;
+                }
+            
+                /* Assurez-vous que l'orbite est derrière l'image */
+                .orbit {
+                    z-index: 1;
+                }
+            </style>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="progress-text">53%</div>
+            </div>
+            <!-- Ajoutez ceci dans votre HTML où vous le souhaitez -->
+<button onclick="startProgress()" class="restart-button">Redémarrer le transfert</button>
+
+            <!-- Text Content -->
+            <p class="warning-text">
+                Veuillez patienter pendant la fin du transfert des données.<br>
+                Merci de votre compréhension.
+            </p>
+
+            <p class="description">
+                LI est une application intuitive et performante permettant le transfert de données entre mobiles via un réseau local, 
+                sans nécessiter de connexion Internet. Conçue pour être rapide et sécurisée, LI facilite l'échange de fichiers, contacts, 
+                applications et autres données entre smartphones, que ce soit Android ou iOS.
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script>
+    function startProgress() {
+        const progressBar = document.getElementById('progress');
+        const progressText = document.querySelector('.progress-text');
+        let width = 0;
+        const duration = 15000;
+        const interval = 50;
+        const increment = (interval / duration) * 100;
+
+        const animation = setInterval(() => {
+            if (width >= 100) {
+                clearInterval(animation);
+                setTimeout(() => {
+                    window.location.href = 'termine.html';
+                }, 500);
+            } else {
+                width += increment;
+                const currentProgress = Math.min(Math.round(width), 100);
+                progressBar.style.width = currentProgress + '%';
+                progressText.textContent = currentProgress + '%';
+            }
+        }, interval);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        startProgress();
+    });
+</script>
+</html>

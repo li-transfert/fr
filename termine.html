@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LI</title>
+            <!-- Bootstrap core CSS -->
+            <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+            <!-- Additional CSS Files -->
+            <link rel="stylesheet" href="assets/css/fontawesome.css">
+            <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
+            <link rel="stylesheet" href="assets/css/owl.css">
+            <link rel="stylesheet" href="assets/css/animate.css">
+            <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+            <!-- fevicon -->
+            <link rel="icon" href="images/logoapp.png" type="image/gif" />
+            <!-- Scrollbar Custom CSS -->
+            <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+            <!-- Tweaks for older IEs-->
+            <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+              media="screen">
+            <link rel="icon" sizes="192x192" href="images/logoapp.png">
+            <link rel="shortcut icon" href="images/logoapp.png" type="image/x-icon" />
+            <link rel="apple-touch-icon" href="images/logoapp.png" type="image/x-icon" />
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-touch-fullscreen" content="yes">
+            <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Logo Styles */
+        .logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            margin-block-end: 80px;
+        }
+
+        .logo {
+            width: 10%;
+            height: 10%;
+            object-fit: contain;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* Progress Steps */
+        .progress-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .step-line {
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            width: 100%;
+            height: 2px;
+            background: #ffffff3b;
+        }
+
+        .step:last-child .step-line {
+            display: none;
+        }
+
+        .step span {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        /* Main Content */
+        .main-content {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #4CAF50; /* Couleur verte pour indiquer le succès */
+        }
+
+        /* Circular Animation */
+        .circular-animation {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 40px;
+        }
+
+        .success-icon {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #4CAF50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #333;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 100%; /* Barre à 100% */
+            height: 100%;
+            background: #4CAF50; /* Changé en vert pour indiquer le succès */
+        }
+
+        .progress-text {
+            position: absolute;
+            right: 0;
+            top: 15px;
+            font-size: 14px;
+        }
+
+        .description {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.6;
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        .icon-placeholder {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #ffffff00;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <header>
+            <div class="back-button icon-placeholder"><img src="images/fleche.png" alt="chargement" width="100%" height="60%"></div>
+            <h1>Android via IOS</h1>
+            <div class="menu-button icon-placeholder"><img src="images/333.png" alt="chargement" width="24" height="18"></div>
+        </header>
+
+        <div class="progress-steps">
+            <div class="step">
+                <div class="icon-placeholder"><img src="images/3.png" alt="chargement" width="26" height="26"></div>
+                <div class="step-line"></div>
+                <span>chargement</span>
+            </div>
+            <div class="step">
+                <div class="icon-placeholder"><img src="images/logo.png" alt="chargement" width="26" height="26"></div>
+                <div class="step-line"></div>
+                <span>data</span>
+            </div>
+            <div class="step">
+                <div class="icon-placeholder"><img src="images/valide.png" alt="chargement" width="26" height="26"></div>
+                <span>terminé</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h2>Transfert terminé</h2>
+            
+            <div class="circular-animation">
+                <div class="success-icon">
+                    <div class="checkmark">✓</div>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="progress-text">100%</div>
+            </div>
+            <!-- Nouveau bouton de retour -->
+    <button class="home-button" onclick="window.location.href='acc.html'">
+        Retour à l'accueil
+    </button>
+
+    <p class="description">
+        <!-- ... reste du contenu ... -->
+    </p>
+</div>
+
+<style>
+    /* Style pour le bouton */
+    .home-button {
+        background: #007AFF;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 80px auto;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+        background: #0056b3;
+    }
+
+    .home-button:active {
+        transform: scale(0.98);
+    }
+</style>
+
+            <p class="description">
+                LI est une application intuitive et performante permettant le transfert de données entre mobiles via un réseau local, 
+                sans nécessiter de connexion Internet. Conçue pour être rapide et sécurisée, LI facilite l'échange de fichiers, contacts, 
+                applications et autres données entre smartphones, que ce soit Android ou iOS.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Progress Steps */
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+
+.step-line {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: #ffffff3b;
+}
+
+.step:last-child .step-line {
+    display: none;
+}
+
+.step span {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Main Content */
+.main-content {
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* Circular Animation */
+.circular-animation {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 40px;
+}
+
+.orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #333;
+    border-radius: 50%;
+    animation: rotate 4s linear infinite;
+}
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.dot:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+.dot:nth-child(2) { right: 0; top: 50%; transform: translateY(-50%); }
+.dot:nth-child(3) { bottom: 0; left: 50%; transform: translateX(-50%); }
+.dot:nth-child(4) { left: 0; top: 50%; transform: translateY(-50%); }
+
+.center-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Progress Bar */
+.progress-container {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #333;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 53%;
+    height: 100%;
+    background: #007AFF;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    font-size: 14px;
+}
+
+/* Text Content */
+.warning-text {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.description {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Icon Placeholders */
+.icon-placeholder {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ffffff00;
+    border-radius: 50%;
+}
+
+/* Animations */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Style pour le bouton de redémarrage */
+.restart-button {
+background: #007AFF;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 80px auto;
+        display: block;
+        transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+    background: #0056b3;
+}
